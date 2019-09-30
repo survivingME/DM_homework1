@@ -1,0 +1,69 @@
+account.csv
+
+576,55,POPLATEK MESICNE,1993/1/1 0:00
+
+account_id at  96  because of  invalid literal for int() with base 10: '1675_[typo]'
+account_id at  141  because of  invalid literal for int() with base 10: "1801_[I'm typo, 2]"
+
+frequency wrong at  471
+
+client.csv 
+
+birth_number conv wrong at  4240  because of  invalid literal for int() with base 10: '190-20'
+4485,190-20,36->4485,190820,36
+
+birth_number wrong at  1  because of  day is out of range for month
+2,450229,1->2,450228,1
+birth_number wrong at  665  because of  day is out of range for month
+697,740232,1->697,740222,1
+birth_number wrong at  785  because of  month must be in 1..12
+828,582210,10->828,581210,10
+birth_number wrong at  2037  because of  month must be in 1..12
+2154,576628,60->2154,575628,60
+birth_number wrong at  4239  because of  month must be in 1..12
+4484,550011,37->4484,550111,37
+
+month_map = {1: 454, 2: 427, 3: 427, 4: 447, 5: 466, 6: 412, 7: 464, 8: 470, 9: 469, 10: 466, 11: 426, 12: 435}
+
+card.csv
+
+type wrong at 332
+
+546,3465,golden,1997/8/19 0:00->546,3465,gold,1997/8/19 0:00
+
+order.csv
+
+all delete
+
+account_id wrong at  5982  account_id= 8045
+account_id wrong at  6134  account_id= 9139
+account_id wrong at  6310  account_id= 10245
+account_id wrong at  6471  account_id= 11321
+
+trans.csv
+
+all delete
+
+balance wrong at  298  and balance= 15d986
+account_id wrong at  38844  and account_id= 8030
+account_id wrong at  38845  and account_id= 8045
+account_id wrong at  38846  and account_id= 8093
+account_id wrong at  38847  and account_id= 9139
+account_id wrong at  38848  and account_id= 10162
+account_id wrong at  38849  and account_id= 10245
+account_id wrong at  38850  and account_id= 10725
+account_id wrong at  38851  and account_id= 11321
+
+loan.csv
+
+payments wrong at  9  and payments= 4876
+duration:22->24
+duration wrong at  265  and duration= -60
+payments wrong at  265  and payments= 1489
+payduration wrong at  265  and payduraion= 50  and duration= -60
+duration:-60->60
+payments wrong at  322  and payments= 5142
+amount:123402->123408
+
+
+
